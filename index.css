@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container{
+    height: 100%;
+    background-image: url(keyboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#check{
+    position: absolute;
+    visibility: hidden;
+}
+
+.button-one  i{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.button-two i{
+    position: absolute;
+    font-size: 18px;
+    left: 90%;
+    top: 15px;
+    cursor: pointer;
+}
+
+#check:checked ~ .sidebar{
+    left: 0px;
+}
+
+#check:checked ~ .button-one i{
+    opacity: 0;
+}
+
+.sidebar{
+    position: fixed;
+    width: 22%;
+    left: -22%;
+    height: 100%;
+    backdrop-filter: blur(19px);
+    box-shadow: 0 0 5px white;
+    margin-left: 1.6px;
+    transition: all 0.8s;
+}
+
+.head{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 80px;
+    margin-bottom: 23px;
+    color: white;
+    box-shadow: 0px 5px  10px white;
+    line-height: 30px;
+}
+
+.head:hover{
+    cursor: pointer;
+}
+
+.flexitems{
+    color: white;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.flexitems:hover{
+    cursor: pointer;
+    box-shadow: -10px 0px 4px white;
+}
+
+.socialmediaicons{
+    font-size: 18px;
+    display: flex;
+    color: grey;
+    text-decoration: none;
+    gap: 16px;
+    position: relative;
+    top: 65px;
+    left: 50px;
+    transition: all 0.7s;
+}
+
+.socialmediaicons i:hover {
+    color: white;
+
+}
